@@ -5,7 +5,7 @@ angular.module('myApp.services', [])
     UsersTable: "Users",
     UserItemsTable: "UsersItems",
     ChargeTable: "UserCharges",
-    Bucket: 'ng-newsletter-example',
+    Bucket: 'experiences_app',
     setCurrentUser: function(u) {
       if (u && !u.error) {
         AWSService.setToken(u.id_token);
