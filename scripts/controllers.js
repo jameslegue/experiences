@@ -31,6 +31,7 @@ angular.module('myApp')
       UserService
         .createPayment($scope.currentItem, $scope.charge)
       .then(function(data) {
+        $scope.errors = data;
         $scope.showCC = false;
       });
     }

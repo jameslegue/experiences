@@ -3,7 +3,7 @@
  
   <div ng-show="!user" class="row">
     <div class="col-md-12">
-      <h2>Signup or login to ngroad</h2>
+      <h2>Signup or login to experiences</h2>
       <div google-signin 
         client-id='662118988077' 
         after-signin="signedIn(oauth)"></div>
@@ -34,7 +34,7 @@
           <label>
             <span>Card Number</span>
             <input type="text" 
-                    ng-minlength="16"
+                    ng-minlength="10"
                     ng-maxlength="20"
                     size="20"
                     data-stripe="number"
