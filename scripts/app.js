@@ -2,10 +2,10 @@ angular.module('myApp',
   ['ngRoute', 'myApp.services', 'myApp.directives']
 )
 .config(function(AWSServiceProvider) {
-  AWSServiceProvider.setArn('arn:aws:iam::762399020484:role/google-web-role');
+  AWSServiceProvider.setArn('');
 })
 .config(function(StripeServiceProvider) {
-  StripeServiceProvider.setPublishableKey('pk_test_IKjIYIAqIdIF1WCiwOAFNhBr');
+  StripeServiceProvider.setPublishableKey('');
 })
 .config(function($routeProvider) {
   $routeProvider
